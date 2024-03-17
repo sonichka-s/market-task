@@ -1,0 +1,42 @@
+.body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 12px;
+  row-gap: 24px;
+  overflow: hidden;
+  align-items: center;
+  padding: 12px;
+}
+
+.img {
+  width: 150px;
+  grid-row: 2 span;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.description {
+  font-size: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: pre-wrap;
+}
+
+.bottomPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+//   grid-column: span 2;
+}
+
+.amountControl {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
