@@ -24,7 +24,7 @@ const Cart: FC<ICartProps> = (props) => {
 
   return (
     <Panel>
-      <PanelHeader>Корзина</PanelHeader>
+      <PanelHeader>Cart</PanelHeader>
       <Group>
         {addedProducts.length
           ? addedProducts.map((item) => (
@@ -34,15 +34,15 @@ const Cart: FC<ICartProps> = (props) => {
                     <Icon16Delete />
                   </IconButton>
                 }
-                subtitle={`Количество: ${item.amount}`}
+                subtitle={`Amount: ${item.amount}`}
                 key={item.product.id + item.amount}
               >
                 {item.product.title}
               </SimpleCell>
             ))
-          : "Вы пока не добавили товары в корзину"}
+          : "Cart is empty"}
       </Group>
-      <div>Итого: {addedProducts.reduce((acc, cur) => acc += cur.amount * parseFloat(cur.product.price), 0)}$</div>
+      <div>Total: {addedProducts.reduce((acc, cur) => acc += cur.amount * parseFloat(cur.product.price), 0)}$</div>
     </Panel>
   );
 };

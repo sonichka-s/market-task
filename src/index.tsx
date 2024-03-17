@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import "@vkontakte/vkui/dist/vkui.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';

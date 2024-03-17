@@ -17,7 +17,7 @@ const ProductsList: FC<IProductsListProps> = (props) => {
 
   return (
     <Panel id="products_list">
-      <PanelHeader>Товары</PanelHeader>
+      <PanelHeader>Products</PanelHeader>
       <Panel>
         {products.length
           ? products.map((product) => (

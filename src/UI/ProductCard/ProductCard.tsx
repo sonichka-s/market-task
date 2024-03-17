@@ -56,7 +56,7 @@ const ProductCard: FC<IProductCardProps> = ({ product }) => {
             </IconButton>
           </div>
           <Button aria-label="add" onClick={onProductAdd}>
-            Добавить в корзину
+            Add to cart
           </Button>
         </div>
       </div>
